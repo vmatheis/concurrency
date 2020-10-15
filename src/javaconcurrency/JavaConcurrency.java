@@ -5,6 +5,8 @@
  */
 package javaconcurrency;
 
+import java.util.Scanner;
+
 /**
  *
  * @author vmatheis
@@ -15,7 +17,17 @@ public class JavaConcurrency {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner s = new Scanner(System.in, "Windows-1252");
+        System.out.println("n> ");
+        int n = s.nextInt();
+        
+        System.out.println("Sum: " + sum(n));
     }
     
+    private static int sum(int n){
+        
+        
+        
+        return 0;
+    }
 }

@@ -48,7 +48,6 @@ public class JavaStreamsTester {
     }
 
     private static int getCountEmptyString(List<String> strings) {
-        //return strings.stream().reduce(0, a -> a.equals(""));
         return strings.stream().filter(s -> s.equals("")).collect(Collectors.toList()).size();
     }
 
@@ -88,7 +87,6 @@ public class JavaStreamsTester {
     }
 
     private static int getAverage(List<Integer> numbers) {
-        //return numbers.stream().forEach(s -> s).sum();
         return numbers.stream().reduce(0, (a, b) -> (a+b))/numbers.size();
     }
 }
